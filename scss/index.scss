@@ -1,0 +1,19 @@
+@import "../fonts/index";
+@import "./utils/reset";
+@import "./utils/variable";
+@import "./utils/mixins";
+@import "./components/index";
+@import "./vendors/slick";
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1140px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@import "./layout/index";
+@import "./sections/index";

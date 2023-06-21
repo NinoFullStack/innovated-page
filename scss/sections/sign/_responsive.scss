@@ -1,0 +1,46 @@
+@media (max-width: 900px) {
+  .sign {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 725px) {
+  .sign {
+    padding: 45px 30px;
+    grid-template-columns: 100%;
+
+    &-form {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .sign {
+    &-form {
+      border: unset;
+
+      grid-template-columns: 1fr;
+
+      &__input {
+        padding: 15px 40px;
+        border-radius: 5px;
+        border: 1px solid #d5e3ff;
+      }
+
+      &__btn {
+        margin-top: 20px;
+        justify-self: center;
+      }
+    }
+
+    .title {
+      font-size: 25px;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@media (max-width: 1200px) {
+  .saying-slider__card:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .saying {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .saying {
+    &-navigation {
+      grid-template-columns: repeat(2, 50px);
+
+      &__icon {
+        height: 50px;
+
+        img {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .title {
+      font-size: 25px;
+      padding-left: 50px;
+
+      &::before {
+        width: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .saying {
+    &-row {
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
+
+    &-navigation {
+      margin-top: 30px;
+    }
+
+    &-slider__card {
+      padding: 50px 25px;
+    }
+
+    .title {
+      font-size: 23px;
+    }
+  }
+}

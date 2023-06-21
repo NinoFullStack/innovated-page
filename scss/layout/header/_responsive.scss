@@ -1,0 +1,150 @@
+@media (max-width: 1400px) {
+  .header-image {
+    right: 0;
+
+    img {
+      width: 660px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .header {
+    padding-bottom: 150px;
+
+    &-image img {
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 1085px) {
+  .header {
+    padding-bottom: 85px;
+
+    &-span {
+      margin-top: 135px;
+    }
+
+    &-image img {
+      width: 510px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header {
+    padding-bottom: 55px;
+    grid-template-columns: 3.5fr 7fr 3fr;
+
+    &-image img {
+      width: 440px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .header {
+    padding-bottom: 20px;
+
+    &-span {
+      margin-top: 90px;
+    }
+
+    &-title {
+      font-size: 53px;
+    }
+
+    &-image img {
+      width: 360px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    padding-bottom: 0;
+    grid-template-areas:
+      "header-logo header-logo header-logo"
+      "header-menu header-menu header-menu"
+      "header-button header-button header-button"
+      "header-span header-span header-span"
+      "header-title header-title header-title"
+      "header-buttons header-buttons header-buttons"
+      "header-image header-image header-image";
+
+    &-logo {
+      justify-self: center;
+      margin-bottom: 30px;
+    }
+
+    &-menu {
+      justify-self: center;
+      margin-bottom: 45px;
+    }
+
+    &-button {
+      justify-self: center;
+    }
+
+    &-span {
+      margin-top: 50px;
+    }
+
+    &-image {
+      margin-top: 50px;
+      position: static;
+      grid-area: header-image;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-menu__link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .header-buttons__icon {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 370px) {
+  .header-title {
+    font-size: 35px;
+  }
+
+  .header-buttons__text {
+    font-size: 14px;
+  }
+
+  .header-buttons__icon {
+    margin-left: 12px;
+  }
+
+  .header-menu__link:not(:last-child) {
+    margin-right: 18px;
+  }
+}

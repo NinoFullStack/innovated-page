@@ -1,0 +1,37 @@
+@media (max-width: 1060px) {
+  .community {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+
+    &-content {
+      .title {
+        margin-bottom: 15px;
+        font-size: 25px;
+      }
+
+      .span {
+        margin-bottom: 10px;
+      }
+
+      .text {
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+    }
+
+    &-video {
+      justify-self: center;
+      margin-top: 70px;
+    }
+  }
+
+  .span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .community .community-video {
+    width: 100%;
+  }
+}

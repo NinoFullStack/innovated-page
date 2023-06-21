@@ -1,0 +1,130 @@
+.saying {
+  margin-bottom: 140px;
+
+  .title {
+    padding-left: 82px;
+    position: relative;
+    display: grid;
+    align-items: center;
+
+    &:before {
+      left: 0;
+      position: absolute;
+      content: "";
+      width: 68px;
+      height: 2px;
+      opacity: 0.5;
+      box-shadow: 0px 2px 30px rgba(#000, 0.03);
+      background-color: $second_color;
+    }
+  }
+
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    margin-bottom: 60px;
+  }
+
+  &-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 72px);
+    grid-column-gap: 40px;
+    justify-content: end;
+
+    &__icon {
+      height: 72px;
+      background-color: $white;
+      box-shadow: 0px 2px 30px rgba(#000, 0.03);
+      border-radius: 50%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &.slick-disabled {
+        background-color: #f4f4f4;
+        opacity: 0.5;
+        cursor: auto;
+      }
+    }
+  }
+
+  &-slider {
+    &__card {
+      width: 555px;
+      padding: 50px 82px;
+      border: 1px solid rgba(#000, 0.1);
+      background-color: $white;
+      border-radius: 10px;
+      transition: 0.3s all;
+      opacity: 0.7;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      .text {
+        transition: 0.3s all;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        &-icon {
+          margin-bottom: 15px;
+        }
+
+        &-avatar {
+          width: 98px;
+          height: 98px;
+          border: 2px solid #7ba8ff;
+
+          img {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100%);
+          }
+
+          &,
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        &-name {
+          font-family: Gelasio;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 150%;
+          color: $main_color;
+        }
+
+        &-position {
+          font-size: $main_font_size;
+          margin-top: 10px;
+          color: $main_color;
+        }
+
+        &-user {
+          display: grid;
+          align-items: center;
+          grid-template-columns: 98px 1fr;
+          grid-column-gap: 30px;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 6px 30px rgba(#000, 0.03);
+        border-color: $white;
+        opacity: 1;
+
+        .text {
+          opacity: 0.8;
+        }
+
+        .card-avatar img {
+          filter: unset;
+        }
+      }
+    }
+  }
+}

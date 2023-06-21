@@ -1,0 +1,23 @@
+@media (max-width: 1163px) {
+  .work .work-items {
+    .work-item {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .work {
+    margin-bottom: 70px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 789px) {
+  .work .work-items {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
